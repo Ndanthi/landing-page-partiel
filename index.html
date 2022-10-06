@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .container {
+        width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: auto;
+      }
+
+      /* Start Landing Page */
+
+      .landing-page .header-area {
+        display: flex;
+        padding: 25px 0 0;
+        position: relative;
+      }
+
+      .landing-page .header-area .logo {
+        text-transform: uppercase;
+        font-style: italic;
+        margin-top: 10px;
+        font-size: 19px;
+        width: 300px;
+        color: #5d5d5d;
+      }
+
+      .landing-page .header-area .links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: right;
+      }
+
+      .landing-page .header-area .links li {
+        display: inline-block;
+        margin-left: 30px;
+        color: #5d5d5d;
+        cursor: pointer;
+      }
+
+      .landing-page .header-area .links li:last-child {
+        border: 0;
+        border-radius: 20px;
+        padding: 10px 18px;
+        color: #fff;
+        background-color: #6c63ff;
+      }
+
+      .landing-page .info {
+        width: 35%;
+        float: left;
+        margin-top: 130px;
+      }
+
+      .landing-page .info h1 {
+        font-size: 44px;
+        margin: 0 0 20px;
+        line-height: 1.4;
+        color: #5d5d5d;
+      }
+
+      .landing-page .info p {
+        margin: 0;
+        line-height: 1.6;
+        font-size: 15px;
+        color: #5d5d5d;
+      }
+
+      .landing-page .info button {
+        border: 0;
+        border-radius: 20px;
+        padding: 12px 30px;
+        margin-top: 30px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #6c63ff;
+      }
+
+      .landing-page .image {
+        width: 50%;
+        float: right;
+        margin-top: 35px;
+      }
+
+      .landing-page .image img {
+        max-width: 100%;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      .socialproof {
+        display: flex;
+        justify-content: center;
+      }
+
+      h2 {
+        text-align: center
+      }
+
+      .column {
+        float: left;
+        width: 33.33%;
+      }
+
+      #step
+      {
+        width: 300px;
+        height: 200px;
+      }
+
+      #descriptionexperience
+      {
+       margin-left: 80px;
+      }
+
+      #descriptionexperience3
+      {margin-left: 200px;}
+
+      .photoarg1 img
+      {width: 300px;
+      height: 200px;
+      float: left;}
+
+.photoarg2 img
+{width: 300px;
+      height: 200px;
+      float: right;}
+
+.photoarg3 img
+      {width: 300px;
+      height: 200px;
+      float: left;}
+    
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the container with a rounded border, grey background and some padding and margin */
+.container2 {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: auto;
+
+}
+
+/* Clear floats after containers */
+.container2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container2 img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container2 span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container2 img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+  .pricingtable
+  {width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: auto;}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns2 {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+.reassurance img
+{width: 200px;
+height: 200px;
+margin-left: 200px
+}
+
+.case-studies
+{background-color: gray;}
+/* Add some padding inside the card container */
+.container3 {
+  border-color: black;
+  margin-left: 200px;
+}
+
+      /* End Landing Page */
+    </style>
+  </head>
+
+  <body>
+    <div class="landing-page">
+      <div class="container">
+        <div class="header-area">
+          <div class="logo">Your <b>Website</b></div>
+          <ul class="links">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Work</li>
+            <li>Info</li>
+            <li>Get Started</li>
+          </ul>
+        </div>
+        <div class="info">
+          <h1>Looking For Inspiration</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            odit nihil ullam nesciunt quidem iste, Repellendus odit nihil
+          </p>
+          <button>Button name</button>
+        </div>
+        <div class="image">
+          <img src="https://i.postimg.cc/65QxYYzh/001234.png" />
+        </div>
+        <div class="clearfix"></div>
+
+        <h2>Plus de 100+ entreprises bénéficient</h2>
+
+        <div class="socialproof">
+          <img src="https://i.imgur.com/jgR6FrM.jpg" />
+          <img src="https://i.imgur.com/1pKhK56.jpg" />
+          <img src="https://i.imgur.com/mdUZ7Aw.jpg" />
+          <img src="https://i.imgur.com/omFOiks.jpg" />
+          <img src="https://i.imgur.com/KC3Ma78.jpg" />
+          <img src="https://i.imgur.com/eFmJULU.jpg" />
+        </div>
+        <p></p>
+
+        <div class="commentcamarche">
+          <h2> Comment ça marche ? </h2>
+          <div class="row">
+              <div class="column">
+                <img id="step" src="https://vectorforfree.com/wp-content/uploads/2020/03/Working_Men_VectorForFree.png"/>
+                <p id="descriptionexperience"> Description de l'étape 1 </p>
+              </div>
+              <div class="column">
+                <img id="step" src="https://img.freepik.com/premium-vector/work-from-home-illustration-concept-man-working-laptop-home_427922-148.jpg"/>
+                <p id="descriptionexperience"> Description de l'étape 2 </p>
+              </div>
+              <div class="step3">
+                <img id="step" src="https://img.freepik.com/free-vector/smart-guy-getting-award-winner-standing-pedestal-holding-golden-cup-cartoon-illustration_74855-14511.jpg?w=2000"/>
+                <p id="descriptionexperience3"> Description de l'étape 3 </p>
+              </div>
+            </div>
+            <br><br><br><br><br><br><br>
+
+
+        <div class="argumentairedevente">
+            <div class="photoarg1">
+                <img src="https://img.freepik.com/premium-vector/thumbs-up-2d-vector-isolated-illustration-gesture-approval-flat-character-cartoon-background-happy-guy-smiling-pleased-man-colourful-scene-mobile-website-presentation_151150-9073.jpg?w=2000">
+              </div>
+                <h3>Benefice 1</h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <br><br><br><br><br><br><br>
+
+              <div class="photoarg2">
+                <img src="https://img.freepik.com/premium-vector/thumbs-up-2d-vector-isolated-illustration-gesture-approval-flat-character-cartoon-background-happy-guy-smiling-pleased-man-colourful-scene-mobile-website-presentation_151150-9073.jpg?w=2000">
+                  </div>
+                    <h3>Benefice 2</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+              <br><br><br><br><br><br><br>
+
+                  <div class="photoarg1">
+                      <img src="https://img.freepik.com/premium-vector/thumbs-up-2d-vector-isolated-illustration-gesture-approval-flat-character-cartoon-background-happy-guy-smiling-pleased-man-colourful-scene-mobile-website-presentation_151150-9073.jpg?w=2000">
+                    </div>
+                      <h3>Benefice 3</h1>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    
+        </div>
+        <br><br><br><br><br><br><br>
+
+       <div class="testimonial">
+          <div class="container2">
+              <img src="data:image/jpeg;base64,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" alt="Avatar" style="width:90px">
+              <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+            
+            <div class="container2">
+              <img src="data:image/jpeg;base64,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" alt="Avatar" style="width:90px">
+              <p><span >Rebecca Flex.</span> CEO at Company.</p>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+       </div>
+       <br><br><br><br><br>
+
+
+       <div class="pricingtable">
+          <div class="columns2">
+              <ul class="price">
+                <li class="header">Basic</li>
+                <li class="grey">$ 9.99 / year</li>
+                <li>10GB Storage</li>
+                <li>10 Emails</li>
+                <li>10 Domains</li>
+                <li>1GB Bandwidth</li>
+                <li class="grey"><a href="#" class="button">Sign Up</a></li>
+              </ul>
+            </div>
+            <div class="columns2">
+                <ul class="price">
+                  <li class="header">Basic</li>
+                  <li class="grey">$ 9.99 / year</li>
+                  <li>10GB Storage</li>
+                  <li>10 Emails</li>
+                  <li>10 Domains</li>
+                  <li>1GB Bandwidth</li>
+                  <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                </ul>
+              </div>
+              <div class="columns2">
+                  <ul class="price">
+                    <li class="header">Basic</li>
+                    <li class="grey">$ 9.99 / year</li>
+                    <li>10GB Storage</li>
+                    <li>10 Emails</li>
+                    <li>10 Domains</li>
+                    <li>1GB Bandwidth</li>
+                    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                  </ul>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+
+          &nbsp;
+
+          <div class="reassurance">
+            <h3> Reassurance </h3>
+              <div class="columns">
+                <div class="column">
+                  <img src="https://www.apref.org/wp-content/uploads/2020/11/Principes-de-la-Re%CC%81assurance-1024x683.jpeg"/>
+                </div>
+                <div class="column">
+                  <img src="https://www.agefi.fr/sites/agefi.fr/files/styles/w_700/public/styles/paysage/public/images/2016/09/reassurance-portefeuille-actifs-fotolia.jpg?itok=oTLiC19-"/>
+                </div>
+                <div class="column">
+                  <img src="https://st2.depositphotos.com/47577860/45978/v/600/depositphotos_459782682-stock-illustration-insurance-reinsurance-solid-icon-in.jpg"/>
+                </div>
+            </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <div class="case-studies">
+              <h3> Case studies </h3>
+              <div class="row">
+              <div class="column">
+                  <img src="https://image.made-in-china.com/155f0j00vqaWRyYIAwoj/Plants-Grow-Happily-to-Dream-House-Beautiful-Scenery-Small-Bridge-Stream-Charming-Scenery-Diamond-Painting.jpg" alt="Avatar">
+                  <div class="container3">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                  </div>
+                </div> 
+
+                    <div class="column">
+                    <img src="https://image.made-in-china.com/155f0j00vqaWRyYIAwoj/Plants-Grow-Happily-to-Dream-House-Beautiful-Scenery-Small-Bridge-Stream-Charming-Scenery-Diamond-Painting.jpg" alt="Avatar">
+                    <div class="container3">
+                      <h4><b>John Doe</b></h4>
+                      <p>Architect & Engineer</p>
+                    </div>
+                  </div> 
+
+
+                  <div class="column">
+                      <img src="https://image.made-in-china.com/155f0j00vqaWRyYIAwoj/Plants-Grow-Happily-to-Dream-House-Beautiful-Scenery-Small-Bridge-Stream-Charming-Scenery-Diamond-Painting.jpg" alt="Avatar">
+                      <div class="container3">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                      </div> </div>
+                    </div>
+                    </div>
+
+    </div>
+  </body>
+</html>
